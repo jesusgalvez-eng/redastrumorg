@@ -2634,3 +2634,167 @@ header .box-icons a {
         gap: 18px;
     }
 }
+
+/* =========================================================
+   FIX CARDS — MISIÓN / VISIÓN / PENSAMIENTO ASTRUM
+   ========================================================= */
+
+.info-section {
+    width: 80%;
+    margin-top: 60px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.6fr;
+    grid-template-rows: 255px 255px;
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: auto;
+    min-height: 255px;
+    padding: 28px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 184, 232, 0.35);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+}
+
+.card h1 {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 0 0 10px 0;
+    z-index: 2;
+    color: lightgray;
+    font-size: 26px;
+    line-height: 1.25;
+}
+
+.card p {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 0;
+    z-index: 2;
+    max-width: 100%;
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.card img {
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 38%;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+    z-index: 1;
+    opacity: 0.95;
+}
+
+.card video {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 45%;
+    object-fit: contain;
+    mix-blend-mode: lighten;
+    z-index: 1;
+}
+
+/* Card grande de la derecha */
+.card:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    height: auto;
+    min-height: 530px;
+    justify-content: center;
+}
+
+.card:nth-child(3) h1 {
+    font-size: 28px;
+    line-height: 1.45;
+    max-width: 90%;
+}
+
+.card:nth-child(3) video {
+    opacity: 0.25;
+    width: 90%;
+    height: 70%;
+}
+
+/* Card inferior izquierda */
+.card:nth-child(4) {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+
+.card:nth-child(4) img {
+    width: 28%;
+    max-height: 150px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .info-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .card,
+    .card:nth-child(3),
+    .card:nth-child(4) {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 280px;
+    }
+
+    .card:nth-child(3) {
+        min-height: 380px;
+    }
+
+    .card h1 {
+        font-size: 24px;
+    }
+
+    .card:nth-child(3) h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info-section {
+        width: 90%;
+    }
+
+    .card {
+        padding: 24px;
+        min-height: 300px;
+    }
+
+    .card img {
+        width: 42%;
+    }
+
+    .card h1 {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+}
