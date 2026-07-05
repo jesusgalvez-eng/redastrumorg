@@ -5,56 +5,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipo - Red Astrum</title>
+
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
 </head>
 
 <body>
     <div class="container">
         <video class="back-vid" autoplay loop muted playsinline src="videos/galaxy.mp4"></video>
 
-        <!-- NAVBAR (igual al index) -->
+        <!-- NAVBAR -->
         <header data-aos="fade-down" data-aos-duration="2000">
             <div class="left">
-                <img src="images/logo_1_red.png" alt="logo Red Astrum">
+                <img src="images/logo_redastrum/logo_0_red.png" alt="Logo Red Astrum">
                 <h2><span style="color: var(--color-primary);">Red</span> Astrum</h2>
             </div>
+
             <ul class="main">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Acerca de <i class='bx bx-chevron-down'></i></a>
+
+                <li>
+                    <a href="#">Acerca de <i class='bx bx-chevron-down'></i></a>
                     <ul>
                         <li><a href="about.html">Sobre nosotros</a></li>
                         <li><a href="team.html">Equipo</a></li>
                     </ul>
                 </li>
+
+                <li><a href="index.html#ongs">ONGs</a></li>
+
+                <li>
+                    <a href="https://linktr.ee/redastrum" target="_blank">Únete a Red Astrum</a>
+                </li>
+
+                <li><a href="index.html#contacto">Contacto</a></li>
             </ul>
+
             <div class="box-icons">
-                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook"><i
-                        class='bx bxl-facebook-circle'></i></a>
-                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank"
-                    aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank"
-                    aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank" aria-label="Instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
             </div>
-            <div class="menu-icon"><i class='bx bx-menu'></i></div>
+
+            <div class="menu-icon">
+                <i class='bx bx-menu'></i>
+            </div>
         </header>
 
+        <!-- SIDEBAR -->
         <div class="sidebar">
-            <div class="close-icon"><i class='bx bx-x'></i></div>
+            <div class="close-icon">
+                <i class='bx bx-x'></i>
+            </div>
+
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
                 <li><a href="team.html">Equipo</a></li>
+                <li><a href="index.html#ongs">ONGs</a></li>
+                <li><a href="https://linktr.ee/redastrum" target="_blank">Únete a Red Astrum</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
             </ul>
+
             <div class="social-sidebar">
-                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank"><i
-                        class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank"><i
-                        class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
             </div>
         </div>
 
@@ -63,8 +93,10 @@
 
             <div class="team-hero" data-aos="fade-down" data-aos-duration="1000">
                 <h1>Nuestro <span class="gradient">Equipo</span></h1>
-                <p>Conoce a las personas detrás de la Red Astrum, comprometidas con transformar la educación en
-                    Latinoamérica.</p>
+                <p>
+                    Conoce a las personas detrás de la Red Astrum, comprometidas con transformar la educación en
+                    Latinoamérica.
+                </p>
             </div>
 
             <!-- CONTROLES -->
@@ -77,128 +109,91 @@
                 <div class="filter-pills" id="filter-pills">
                     <button class="pill" data-filter="Todos">Todos</button>
                     <button class="pill active" data-filter="Fundadores">Fundadores</button>
-                    <button class="pill" data-filter="Secretaría">Secretaría</button>
-                    <button class="pill" data-filter="Gestión Comunidad">Gestión Comunidad</button>
-                    <button class="pill" data-filter="Áreas de Apoyo">Áreas de Apoyo</button>
                     <button class="pill" data-filter="Consejo Supremo">Consejo Supremo</button>
+                    <button class="pill" data-filter="Núcleo Duro">Núcleo Duro</button>
                 </div>
             </div>
 
-            <p class="results-count" id="results-count">Mostrando <span id="count-num">0</span> integrantes</p>
+            <p class="results-count" id="results-count">
+                Mostrando <span id="count-num">0</span> integrantes
+            </p>
 
-            <!-- GRID -->
             <div class="team-grid" id="team-grid"></div>
 
-            <!-- ESTADO VACÍO -->
             <div class="empty-state" id="empty-state">
                 <i class='bx bx-user-x'></i>
                 <p>No se encontraron integrantes con ese filtro.</p>
             </div>
-
         </div>
 
+        <!-- FOOTER -->
         <section class="footer">
-            <h1>© 2026 Red Astrum. Todos los derechos reservados.</h1>
+            <div class="footer-text">
+                <h1>© 2026 Red Astrum. Todos los derechos reservados.</h1>
+                <p>RUC: 20615815005</p>
+            </div>
+
             <div class="box-icons">
-                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook"><i
-                        class='bx bxl-facebook-circle'></i></a>
-                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank"
-                    aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank"
-                    aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank" aria-label="Instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
             </div>
         </section>
     </div>
 
+    <!-- SCRIPTS -->
     <script src="app.js"></script>
+
     <script>
-        // Toggle submenú "Acerca de" al hacer clic
-        document.querySelectorAll('.main > li > a').forEach(function (link) {
-            var parent = link.parentElement;
+        document.querySelectorAll('.main > li > a').forEach(function(link) {
+            const parent = link.parentElement;
+
             if (parent.querySelector('ul')) {
-                link.addEventListener('click', function (e) {
+                link.addEventListener('click', function(e) {
                     e.preventDefault();
-                    var isOpen = parent.classList.contains('open');
-                    document.querySelectorAll('.main > li.open').forEach(function (li) {
+
+                    const isOpen = parent.classList.contains('open');
+
+                    document.querySelectorAll('.main > li.open').forEach(function(li) {
                         li.classList.remove('open');
                     });
-                    if (!isOpen) parent.classList.add('open');
+
+                    if (!isOpen) {
+                        parent.classList.add('open');
+                    }
                 });
             }
         });
 
-        // Cerrar al hacer clic fuera
-        document.addEventListener('click', function (e) {
+        document.addEventListener('click', function(e) {
             if (!e.target.closest('header')) {
-                document.querySelectorAll('.main > li.open').forEach(function (li) {
+                document.querySelectorAll('.main > li.open').forEach(function(li) {
                     li.classList.remove('open');
                 });
             }
         });
     </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
         AOS.init();
 
-        /* ══════════════════════════════════════════
-           DATOS DEL EQUIPO — PLANTILLA
-           Para agregar o editar un integrante, copia un
-           bloque { } y completa estos campos:
-
-           nombre:      Nombre completo
-           rol:         Cargo dentro de Red Astrum
-           area:        Debe coincidir EXACTAMENTE con una
-                        de las pestañas de filtro:
-                        "Fundadores" | "Secretaría" |
-                        "Gestión Comunidad" | "Áreas de Apoyo" |
-                        "Consejo Supremo"
-           descripcion: 1-2 frases sobre la persona.
-                        Déjalo "" si no quieres mostrar nada.
-           foto:        ruta a la imagen (ej: "images/claudio.jpg")
-                        Déjalo "" para mostrar sus iniciales.
-           redes:       sus redes sociales. Deja "" en las que
-                        no tenga — solo se muestra el ícono de
-                        las que sí completes.
-                        Disponibles: linkedin, instagram,
-                        facebook, twitter, tiktok, email
-        ══════════════════════════════════════════ */
         const teamMembers = [
             {
-                nombre: "Claudio Zapata",
-                rol: "Co-fundador",
-                area: "Fundadores",
-                descripcion: "",
-                foto: "images/Claudio.png",
-                redes: {
-                    linkedin: "https://www.linkedin.com/in/claudio-roberto-zapata-pizango-b4a750345/",
-                    instagram: "",
-                    facebook: "",
-                    twitter: "",
-                    tiktok: "",
-                    email: ""
-                }
-            },
-            {
-                nombre: "Fabio Alfaro",
-                rol: "Co-fundador",
-                area: "Fundadores",
-                descripcion: "",
-                foto: "images/Fabio.png",
-                redes: {
-                    linkedin: "https://www.linkedin.com/in/fabioalfarojauregui/",
-                    instagram: "",
-                    facebook: "",
-                    twitter: "",
-                    tiktok: "",
-                    email: "fabio.alfaro@redastrum.org"
-                }
-            },
-            {
                 nombre: "Jesús Gálvez",
-                rol: "Fundador",
+                rol: "Fundador / Consejo Supremo",
                 area: "Fundadores",
+                areas: ["Fundadores", "Consejo Supremo"],
+                subarea: "",
                 descripcion: "",
-                foto: "images/Jesus.png",
+                foto: "images/fundadores/jesus_galvez.png",
                 redes: {
                     linkedin: "https://www.linkedin.com/in/jesusgalvezcruz/",
                     instagram: "",
@@ -209,26 +204,30 @@
                 }
             },
             {
-                nombre: "Jhosany Lazo",
-                rol: "Co-fundador",
+                nombre: "Fabio Alfaro",
+                rol: "Co-fundador / Consejo Supremo",
                 area: "Fundadores",
+                areas: ["Fundadores", "Consejo Supremo"],
+                subarea: "",
                 descripcion: "",
-                foto: "images/Jhosany.png",
+                foto: "images/fundadores/fabio_alfaro.png",
                 redes: {
-                    linkedin: "https://www.linkedin.com/in/belen-lazo-alegre-831740282",
+                    linkedin: "https://www.linkedin.com/in/fabioalfarojauregui/",
                     instagram: "",
                     facebook: "",
                     twitter: "",
                     tiktok: "",
-                    email: "jhosany.lazo@redastrum.org"
+                    email: "fabio.alfaro@redastrum.org"
                 }
             },
             {
                 nombre: "Manuel Palomino",
-                rol: "Co-fundador",
+                rol: "Co-fundador / Consejo Supremo",
                 area: "Fundadores",
+                areas: ["Fundadores", "Consejo Supremo"],
+                subarea: "",
                 descripcion: "",
-                foto: "images/Manuel.png",
+                foto: "images/fundadores/manuel_palomino.png",
                 redes: {
                     linkedin: "https://www.linkedin.com/in/manuel-palomino-309451382",
                     instagram: "",
@@ -239,11 +238,47 @@
                 }
             },
             {
-                nombre: "Valeria Cama",
+                nombre: "Claudio Zapata",
                 rol: "Co-fundador",
                 area: "Fundadores",
+                areas: ["Fundadores"],
+                subarea: "",
                 descripcion: "",
-                foto: "images/Valeria.png",
+                foto: "images/fundadores/claudio_zapata.png",
+                redes: {
+                    linkedin: "https://www.linkedin.com/in/claudio-roberto-zapata-pizango-b4a750345/",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Jhosany Lazo",
+                rol: "Co-fundadora",
+                area: "Fundadores",
+                areas: ["Fundadores"],
+                subarea: "",
+                descripcion: "",
+                foto: "images/fundadores/jhosany_lazo.png",
+                redes: {
+                    linkedin: "https://www.linkedin.com/in/belen-lazo-alegre-831740282",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: "jhosany.lazo@redastrum.org"
+                }
+            },
+            {
+                nombre: "Valeria Cama",
+                rol: "Co-fundadora",
+                area: "Fundadores",
+                areas: ["Fundadores"],
+                subarea: "",
+                descripcion: "",
+                foto: "images/fundadores/valeria_cama.png",
                 redes: {
                     linkedin: "https://www.linkedin.com/in/valeria-cama-cabrera-5b43723a3",
                     instagram: "",
@@ -253,14 +288,69 @@
                     email: "valeria.cama@redastrum.org"
                 }
             },
+
+            {
+                nombre: "Marcelo Villagarcía",
+                rol: "Consejo Supremo",
+                area: "Consejo Supremo",
+                areas: ["Consejo Supremo"],
+                subarea: "",
+                descripcion: "",
+                foto: "images/consejosupremo/marcelo_villagarcia.png",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Walter Sánchez",
+                rol: "Consejo Supremo",
+                area: "Consejo Supremo",
+                areas: ["Consejo Supremo"],
+                subarea: "",
+                descripcion: "",
+                foto: "images/consejosupremo/walter_sanchez.PNG",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Ximena Cortez",
+                rol: "Consejo Supremo",
+                area: "Consejo Supremo",
+                areas: ["Consejo Supremo"],
+                subarea: "",
+                descripcion: "",
+                foto: "images/consejosupremo/ximena_cortez.PNG",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+
             {
                 nombre: "Brendi Imán",
                 rol: "Secretaría",
-                area: "Secretaría",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Secretaría",
                 descripcion: "",
                 foto: "",
                 redes: {
-                    linkedin: "https://www.linkedin.com/in/brendi-imán-valdiviezo-9b7192369/ ",
+                    linkedin: "https://www.linkedin.com/in/brendi-imán-valdiviezo-9b7192369/",
                     instagram: "",
                     facebook: "",
                     twitter: "",
@@ -271,9 +361,11 @@
             {
                 nombre: "Marilyn Cordova",
                 rol: "Gestión Comunidad",
-                area: "Gestión Comunidad",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Gestión Comunidad",
                 descripcion: "",
-                foto: "images/Marilyn.png",
+                foto: "images/fotos/marilyn_cordova.PNG",
                 redes: {
                     linkedin: "https://www.linkedin.com/in/marilyn-leonela-cordova-bejarano-3571653b9",
                     instagram: "",
@@ -286,9 +378,11 @@
             {
                 nombre: "Alison Roman",
                 rol: "Gestión Comunidad",
-                area: "Gestión Comunidad",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Gestión Comunidad",
                 descripcion: "",
-                foto: "images/Alison.png",
+                foto: "images/fotos/alison_roman.png",
                 redes: {
                     linkedin: "",
                     instagram: "",
@@ -299,11 +393,30 @@
                 }
             },
             {
+                nombre: "Allison Canales",
+                rol: "Gestión Comunidad",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Gestión Comunidad",
+                descripcion: "",
+                foto: "images/fotos/alisson_canales.png",
+                redes: {
+                    linkedin: "https://www.linkedin.com/in/alisson-canales-1bab55343",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
                 nombre: "Julibeth Román",
                 rol: "Gestión Comunidad",
-                area: "Gestión Comunidad",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Gestión Comunidad",
                 descripcion: "",
-                foto: "images/Julibeth.png",
+                foto: "images/fotos/julibeth_roman.png",
                 redes: {
                     linkedin: "",
                     instagram: "",
@@ -316,9 +429,11 @@
             {
                 nombre: "Viviana Alférez",
                 rol: "Gestión Comunidad",
-                area: "Gestión Comunidad",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Gestión Comunidad",
                 descripcion: "",
-                foto: "images/Viviana.png",
+                foto: "images/fotos/viviana_alferez.png",
                 redes: {
                     linkedin: "",
                     instagram: "",
@@ -331,9 +446,11 @@
             {
                 nombre: "Yaiza Rojas",
                 rol: "Gestión Comunidad",
-                area: "Gestión Comunidad",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Gestión Comunidad",
                 descripcion: "",
-                foto: "images/Yaiza.png",
+                foto: "images/fotos/yaiza_rojas.png",
                 redes: {
                     linkedin: "https://www.linkedin.com/in/yaiza-rojas-a9486a346",
                     instagram: "",
@@ -346,9 +463,11 @@
             {
                 nombre: "Sebastian Zapata",
                 rol: "Gestión Comunidad",
-                area: "Gestión Comunidad",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Gestión Comunidad",
                 descripcion: "",
-                foto: "images/Sebastian.png",
+                foto: "images/fotos/sebastian_zapata.png",
                 redes: {
                     linkedin: "https://www.linkedin.com/in/sebastian-zapata-29382640a/",
                     instagram: "",
@@ -358,27 +477,15 @@
                     email: ""
                 }
             },
-            {
-                nombre: "Allison Canales",
-                rol: "Gestión Comunidad",
-                area: "Gestión Comunidad",
-                descripcion: "",
-                foto: "images/Allison.png",
-                redes: {
-                    linkedin: "https://www.linkedin.com/in/alisson-canales-1bab55343",
-                    instagram: "",
-                    facebook: "",
-                    twitter: "",
-                    tiktok: "",
-                    email: ""
-                }
-            },
+
             {
                 nombre: "Yulissa Restrepo Arango",
                 rol: "Tecnología & Informática",
-                area: "Áreas de Apoyo",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Áreas de Apoyo",
                 descripcion: "",
-                foto: "images/Yulissa.png",
+                foto: "images/fotos/yulissa_restrepo.png",
                 redes: {
                     linkedin: "",
                     instagram: "",
@@ -391,11 +498,13 @@
             {
                 nombre: "Amy Maldonado",
                 rol: "Tecnología & Informática",
-                area: "Áreas de Apoyo",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Áreas de Apoyo",
                 descripcion: "",
-                foto: "images/Amy.png",
+                foto: "images/fotos/amy_maldonado.png",
                 redes: {
-                    linkedin: "https://www.linkedin.com/in/~amymaldonadoj ",
+                    linkedin: "https://www.linkedin.com/in/~amymaldonadoj",
                     instagram: "",
                     facebook: "",
                     twitter: "",
@@ -406,11 +515,13 @@
             {
                 nombre: "Valeria Rivas",
                 rol: "Marketing",
-                area: "Áreas de Apoyo",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Áreas de Apoyo",
                 descripcion: "",
-                foto: "images/ValeriaRivas.png",
+                foto: "images/fotos/valeria_rivas.png",
                 redes: {
-                    linkedin: "https://www.linkedin.com/in/valeria-rivas-hurtado-3222a23b0/ ",
+                    linkedin: "https://www.linkedin.com/in/valeria-rivas-hurtado-3222a23b0/",
                     instagram: "",
                     facebook: "",
                     twitter: "",
@@ -418,9 +529,196 @@
                     email: ""
                 }
             },
+            {
+                nombre: "Daira Lima",
+                rol: "Áreas de Apoyo",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Áreas de Apoyo",
+                descripcion: "",
+                foto: "images/fotos/daira_lima.webp",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Dayanna Córdoba",
+                rol: "Áreas de Apoyo",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Áreas de Apoyo",
+                descripcion: "",
+                foto: "images/fotos/dayanna_cordoba.webp",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Evans Toribio",
+                rol: "Áreas de Apoyo",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Áreas de Apoyo",
+                descripcion: "",
+                foto: "images/fotos/evans_toribio.webp",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "José Piedra",
+                rol: "Áreas de Apoyo",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Áreas de Apoyo",
+                descripcion: "",
+                foto: "images/fotos/jose_piedra.jfif",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Mia Barrantes",
+                rol: "Áreas de Apoyo",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Áreas de Apoyo",
+                descripcion: "",
+                foto: "images/fotos/mia_barrantes.webp",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+
+            {
+                nombre: "Clarisa Farfán",
+                rol: "Representante ONG",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Representantes ONG",
+                descripcion: "",
+                foto: "images/representantes_ong/clarisa_farfan.PNG",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Karla Camara",
+                rol: "Representante ONG",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Representantes ONG",
+                descripcion: "",
+                foto: "images/representantes_ong/karla_camara.PNG",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Kimberly Bonilla",
+                rol: "Representante ONG",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Representantes ONG",
+                descripcion: "",
+                foto: "images/representantes_ong/kimberlym_bonilla.PNG",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Mary Thomas",
+                rol: "Representante ONG",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Representantes ONG",
+                descripcion: "",
+                foto: "images/representantes_ong/mary_thomas.PNG",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Pamela Vega",
+                rol: "Representante ONG",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Representantes ONG",
+                descripcion: "",
+                foto: "images/representantes_ong/pamela_vega.PNG",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            },
+            {
+                nombre: "Valery Huaranga",
+                rol: "Representante ONG",
+                area: "Núcleo Duro",
+                areas: ["Núcleo Duro"],
+                subarea: "Representantes ONG",
+                descripcion: "",
+                foto: "images/representantes_ong/valery_huaranga.PNG",
+                redes: {
+                    linkedin: "",
+                    instagram: "",
+                    facebook: "",
+                    twitter: "",
+                    tiktok: "",
+                    email: ""
+                }
+            }
         ];
 
-        /* Ícono de boxicons para cada red social disponible */
         const socialIcons = {
             linkedin: "bxl-linkedin",
             instagram: "bxl-instagram",
@@ -432,19 +730,29 @@
 
         function renderSocials(redes) {
             if (!redes) return "";
+
             return Object.keys(redes)
                 .filter(key => redes[key] && redes[key].trim() !== "")
                 .map(key => {
                     const icon = socialIcons[key] || "bx-link";
                     const href = key === "email" ? `mailto:${redes[key]}` : redes[key];
-                    return `<a href="${href}" target="_blank" class="social-icon" aria-label="${key}"><i class='bx ${icon}'></i></a>`;
+
+                    return `
+                        <a href="${href}" target="_blank" class="social-icon" aria-label="${key}">
+                            <i class='bx ${icon}'></i>
+                        </a>
+                    `;
                 })
                 .join("");
         }
 
-        /* ══ Renderizado ══ */
         function getInitials(name) {
-            return name.split(" ").slice(0, 2).map(w => w[0]).join("").toUpperCase();
+            return name
+                .split(" ")
+                .slice(0, 2)
+                .map(w => w[0])
+                .join("")
+                .toUpperCase();
         }
 
         function renderCards(members) {
@@ -472,13 +780,16 @@
 
                 const avatarClass = hasPhoto ? "member-avatar" : "member-avatar no-photo";
 
-                const descripcionHtml = (m.descripcion && m.descripcion.trim() !== "")
+                const descripcionHtml = m.descripcion && m.descripcion.trim() !== ""
                     ? `<p class="member-description">${m.descripcion}</p>`
                     : "";
 
                 const socialsHtml = renderSocials(m.redes);
+                const badges = m.areas || [m.area];
+                const subareaHtml = m.subarea ? `<span class="member-subarea">${m.subarea}</span>` : "";
 
                 const card = document.createElement("div");
+
                 card.className = "member-card";
                 card.setAttribute("data-area", m.area);
                 card.setAttribute("data-name", m.nombre.toLowerCase());
@@ -489,10 +800,17 @@
                     <div class="${avatarClass}">
                         ${avatarContent}
                     </div>
-                    <span class="member-area">${m.area}</span>
+
+                    <div class="member-badges">
+                        ${badges.map(area => `<span class="member-area">${area}</span>`).join("")}
+                        ${subareaHtml}
+                    </div>
+
                     <h3 class="member-name">${m.nombre}</h3>
                     <p class="member-role">${m.rol}</p>
+
                     ${descripcionHtml}
+
                     ${socialsHtml ? `<div class="member-socials">${socialsHtml}</div>` : ""}
                 `;
 
@@ -502,36 +820,39 @@
             AOS.refresh();
         }
 
-        /* ══ Filtrado ══ */
         let activeFilter = "Fundadores";
         let searchQuery = "";
 
         function applyFilters() {
             const filtered = teamMembers.filter(m => {
-                const matchArea = activeFilter === "Todos" || m.area === activeFilter;
+                const memberAreas = m.areas || [m.area];
+                const matchArea = activeFilter === "Todos" || memberAreas.includes(activeFilter);
                 const matchName = m.nombre.toLowerCase().includes(searchQuery);
+
                 return matchArea && matchName;
             });
+
             renderCards(filtered);
         }
 
-
         document.getElementById("filter-pills").addEventListener("click", e => {
             const pill = e.target.closest(".pill");
+
             if (!pill) return;
+
             document.querySelectorAll(".pill").forEach(p => p.classList.remove("active"));
+
             pill.classList.add("active");
             activeFilter = pill.dataset.filter;
+
             applyFilters();
         });
 
-        /* Búsqueda */
         document.getElementById("search-input").addEventListener("input", e => {
             searchQuery = e.target.value.toLowerCase().trim();
             applyFilters();
         });
 
-        /* Carga inicial */
         applyFilters();
     </script>
 </body>
