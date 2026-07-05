@@ -2818,3 +2818,80 @@ header .box-icons a {
     border: 1px solid rgba(232, 116, 12, 0.45);
     color: var(--color-accent);
 }
+
+/* ===== FIX TEAM CARDS / ENCUADRE ===== */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+    justify-content: center;
+    gap: 38px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.member-card {
+    position: relative;
+    overflow: visible;
+    padding: 78px 28px 28px;
+    min-height: 250px;
+    text-align: center;
+}
+
+.member-avatar {
+    position: absolute;
+    top: -54px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #7b2cbf;
+    box-shadow: 0 0 18px rgba(123, 44, 191, 0.45);
+    background: #1a1033;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.member-avatar.no-photo {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, #7b2cbf, #f77f00);
+}
+
+.member-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+}
+
+.member-name {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.member-role {
+    margin-top: 0;
+    line-height: 1.4;
+}
+
+.results-count {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
