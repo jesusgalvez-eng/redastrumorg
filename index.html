@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Astrum</title>
+
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -15,6 +16,7 @@
     <div class="container">
         <video class="back-vid" autoplay loop muted playsinline src="videos/galaxy.mp4"></video>
 
+        <!-- HEADER -->
         <header data-aos="fade-down" data-aos-duration="2000">
             <div class="left">
                 <img src="images/logo_redastrum/logo_0_red.png" alt="logo Red Astrum">
@@ -22,21 +24,37 @@
             </div>
 
             <ul class="main">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca de <i class='bx bx-chevron-down'></i></a>
+                <li><a href="index.html">Inicio</a></li>
+
+                <li>
+                    <a href="#">Acerca de <i class='bx bx-chevron-down'></i></a>
                     <ul>
                         <li><a href="about.html">Sobre nosotros</a></li>
                         <li><a href="team.html">Equipo</a></li>
                     </ul>
                 </li>
+
                 <li><a href="#ongs">ONGs</a></li>
+
+                <li>
+                    <a href="https://linktr.ee/redastrum" target="_blank">
+                        Únete a Red Astrum
+                    </a>
+                </li>
+
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
 
             <div class="box-icons">
-                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank" aria-label="Instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
             </div>
 
             <div class="menu-icon">
@@ -44,25 +62,39 @@
             </div>
         </header>
 
-<div class="sidebar">
-    <div class="close-icon">
-        <i class='bx bx-x'></i>
-    </div>
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="close-icon">
+                <i class='bx bx-x'></i>
+            </div>
 
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="about.html">Sobre nosotros</a></li>
-        <li><a href="team.html">Equipo</a></li>
-        <li><a href="ongs.html">ONGs</a></li>
-        <li><a href="https://linktr.ee/redastrum" target="_blank">Únete a Red Astrum</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-    </ul>
-</div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Sobre nosotros</a></li>
+                <li><a href="team.html">Equipo</a></li>
+                <li><a href="#ongs">ONGs</a></li>
+                <li><a href="https://linktr.ee/redastrum" target="_blank">Únete a Red Astrum</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="social-sidebar">
+                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank" aria-label="Instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
+            </div>
+        </div>
 
         <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
             <video autoplay loop muted playsinline src="videos/blackhole.mp4"></video>
         </div>
 
+        <!-- HERO -->
         <section class="hero">
             <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
                 <div class="hero-info-title">
@@ -73,55 +105,69 @@
                     Educación integral para todos
                 </div>
 
-                <!-- FIXED: <p> was incorrectly nested inside <h1> -->
-                <h1 data-aos="fade-right" data-aos-duration="3000">Red <span class="gradient">Astrum</span></h1>
-                <p>Nacida el 1 de julio del 2025, la Red Astrum agrupa ONGs, agrupaciones estudiantiles y docentes
-                    para demostrar que la educación no tiene límites.</p>
+                <h1 data-aos="fade-right" data-aos-duration="3000">
+                    Red <span class="gradient">Astrum</span>
+                </h1>
+
+                <p>
+                    Nacida el 1 de julio del 2025, la Red Astrum agrupa ONGs, agrupaciones estudiantiles y docentes
+                    para demostrar que la educación no tiene límites.
+                </p>
             </div>
 
             <div class="skills-video-box">
-                <img src="images/header-img.svg" alt="">
+                <img src="images/header-img.svg" alt="Ilustración principal Red Astrum">
             </div>
 
             <div class="scroll-down"></div>
         </section>
 
-        <!-- FIXED: was <seaction> (typo) -->
+        <!-- INFO -->
         <section class="info-section">
             <h1 class="section-title autoDisplay">Conozca nuestro proyecto</h1>
+
             <div class="info-cards">
                 <div class="card">
                     <h1>MISIÓN</h1>
-                    <p>Impulsar una educación integral basada en la practicidad del mundo real que forme jóvenes
-                        conscientes, críticos y capaces de transformar su realidad.</p>
-                    <img src="images/a1ebac9c-a853-4c5d-96ae-aa7f0b5ff1f9-removebg-preview.png" alt="" class="content-img">
+                    <p>
+                        Impulsar una educación integral basada en la practicidad del mundo real que forme jóvenes
+                        conscientes, críticos y capaces de transformar su realidad.
+                    </p>
+                    <img src="images/a1ebac9c-a853-4c5d-96ae-aa7f0b5ff1f9-removebg-preview.png" alt="Misión Red Astrum" class="content-img">
                 </div>
 
                 <div class="card">
                     <h1>VISIÓN</h1>
-                    <p>Construir en Latinoamérica una educación fuera de lo convencional, donde los jóvenes desarrollen
-                        su mente, su propósito y su capacidad de cambiar el mundo.</p>
-                    <img src="images/a1ebbe9b-5434-4af5-9d04-8d497909c5fc-removebg-preview.png" alt="">
+                    <p>
+                        Construir en Latinoamérica una educación fuera de lo convencional, donde los jóvenes desarrollen
+                        su mente, su propósito y su capacidad de cambiar el mundo.
+                    </p>
+                    <img src="images/a1ebbe9b-5434-4af5-9d04-8d497909c5fc-removebg-preview.png" alt="Visión Red Astrum">
                 </div>
 
                 <div class="card">
                     <br>
                     <br>
-                    <h1>Somos la primera red educativa juvenil que promueve el desarrollo de la educación holística en
-                        Perú y Latinoamérica.</h1>
+                    <h1>
+                        Somos la primera red educativa juvenil que promueve el desarrollo de la educación holística en
+                        Perú y Latinoamérica.
+                    </h1>
                     <video src="videos/glob.mp4" autoplay loop muted playsinline></video>
                 </div>
 
                 <div class="card">
                     <h1>El pensamiento Astrum</h1>
-                    <p>Nos distinguimos por un liderazgo altruista y basado en el servicio. Desde esta visión
+                    <p>
+                        Nos distinguimos por un liderazgo altruista y basado en el servicio. Desde esta visión
                         desarrollamos nuestras iniciativas y formamos a estudiantes y docentes comprometidos con una
-                        educación más humana.</p>
-                    <img src="images/a1ebb253-86f6-400a-a111-b1fe1d348e2f-removebg-preview.png" alt="">
+                        educación más humana.
+                    </p>
+                    <img src="images/a1ebb253-86f6-400a-a111-b1fe1d348e2f-removebg-preview.png" alt="Pensamiento Astrum">
                 </div>
             </div>
         </section>
 
+        <!-- ACTIVIDADES -->
         <section class="my-project">
             <h1 class="section-title autoDisplay">En Red Astrum realizamos actividades como...</h1>
 
@@ -129,9 +175,12 @@
                 <div class="project-vidbox autoBlur">
                     <img src="images/picnic_lima_redastrum.jpg" alt="Formaciones internas de liderazgo" class="img-project">
                 </div>
+
                 <div class="project-info fadein-left">
-                    <h1><span class="gradient">Formaciones internas basadas en el<br>liderazgo</span> "Astrum" y la
-                        cultura interna.</h1>
+                    <h1>
+                        <span class="gradient">Formaciones internas basadas en el<br>liderazgo</span>
+                        "Astrum" y la cultura interna.
+                    </h1>
                 </div>
             </div>
 
@@ -139,9 +188,12 @@
                 <div class="project-vidbox autoBlur">
                     <img src="images/encuentro_san_miguel.png" alt="Proyectos comunitarios" class="img-project">
                 </div>
+
                 <div class="project-info fadein-left">
-                    <h1>Proyectos comunitarios diseñados a partir<span class="gradient"><br>de las ODS y la realidad
-                            nacional.</span></h1>
+                    <h1>
+                        Proyectos comunitarios diseñados a partir
+                        <span class="gradient"><br>de las ODS y la realidad nacional.</span>
+                    </h1>
                 </div>
             </div>
 
@@ -149,35 +201,46 @@
                 <div class="project-vidbox autoBlur">
                     <img src="images/conferencia_climatica_internacional.jpg" alt="Conferencia climática internacional" class="img-project">
                 </div>
+
                 <div class="project-info fadein-left">
-                    <h1>Espacios de networking como conferencias,<span class="gradient"><br>cumbres, eventos informales.</span></h1>
+                    <h1>
+                        Espacios de networking como conferencias,
+                        <span class="gradient"><br>cumbres y eventos informales.</span>
+                    </h1>
                 </div>
             </div>
         </section>
 
+        <!-- IMPACTO -->
         <div class="counters">
             <h1 class="section-title autoDisplay">Impacto de la Red Astrum</h1>
+
             <div>
                 <div class="counter">
                     <h1><span data-count="10">0</span>+</h1>
                     <h3>Proyectos educativos lanzados</h3>
                 </div>
+
                 <div class="counter">
                     <h1><span data-count="1000">0</span>+</h1>
                     <h3>Jóvenes peruanos alcanzados</h3>
                 </div>
+
                 <div class="counter">
                     <h1><span data-count="7">0</span></h1>
                     <h3>Organizaciones juveniles afiliadas</h3>
                 </div>
+
                 <div class="counter">
                     <h1><span data-count="20">0</span>+</h1>
                     <h3>Instituciones aliadas globales</h3>
                 </div>
+
                 <div class="counter">
                     <h1><span data-count="120">0</span>+</h1>
                     <h3>Estudiantes dentro de G-Astrum</h3>
                 </div>
+
                 <div class="counter">
                     <h1><span data-count="10">0</span>+</h1>
                     <h3>Asesores de la Red Astrum</h3>
@@ -185,75 +248,142 @@
             </div>
         </div>
 
+        <!-- ONGS -->
         <section class="skills-section">
             <h1 class="section-title autoDisplay" id="ongs">ONGs de la Red Astrum</h1>
+
             <div class="skills-box autoDisplay">
                 <div class="Designer">
-                    <p>La Red Astrum opera principalmente a través de sus organizaciones juveniles, las cuales impulsan
+                    <p>
+                        La Red Astrum opera principalmente a través de sus organizaciones juveniles, las cuales impulsan
                         iniciativas educativas, sociales y de liderazgo. A continuación, se presentan las organizaciones
                         que conforman esta red y que trabajan conjuntamente para generar impacto en la formación de
-                        jóvenes.</p>
+                        jóvenes.
+                    </p>
                 </div>
 
                 <div class="slider" style="--quantity: 7;">
                     <div class="list">
-                        <div class="item" style="--position: 1"><img src="images/holoastrum.png" alt="HoloAstrum"></div>
-                        <div class="item" style="--position: 2"><img src="images/holo_astrum_PUCP.png" alt="HoloAstrum PUCP"></div>
-                        <div class="item" style="--position: 3"><img src="images/Holo_Astrum_UNMSM.png" alt="HoloAstrum UNMSM"></div>
-                        <div class="item" style="--position: 4"><img src="images/Yatimaq.png" alt="Yatimaq"></div>
-                        <div class="item" style="--position: 5"><img src="images/Girls_in_Science.png" alt="Girls in Science"></div>
-                        <div class="item" style="--position: 6"><img src="images/Unity.png" alt="Unity"></div>
-                        <div class="item" style="--position: 7"><img src="images/Maywa.png" alt="Maywa"></div>
+                        <div class="item" style="--position: 1">
+                            <img src="images/holoastrum.png" alt="Holo Astrum">
+                        </div>
+
+                        <div class="item" style="--position: 2">
+                            <img src="images/holo_astrum_PUCP.png" alt="Holo Astrum PUCP">
+                        </div>
+
+                        <div class="item" style="--position: 3">
+                            <img src="images/Holo_Astrum_UNMSM.png" alt="Holo Astrum UNMSM">
+                        </div>
+
+                        <div class="item" style="--position: 4">
+                            <img src="images/Yatimaq.png" alt="Yatimaq">
+                        </div>
+
+                        <div class="item" style="--position: 5">
+                            <img src="images/Girls_in_Science.png" alt="Girls in Science">
+                        </div>
+
+                        <div class="item" style="--position: 6">
+                            <img src="images/Unity.png" alt="Unity">
+                        </div>
+
+                        <div class="item" style="--position: 7">
+                            <img src="images/Maywa.png" alt="Maywa">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- CONTACTO -->
         <section class="contact-section" id="contacto">
             <h1 class="section-title autoDisplay">Contáctanos 😊</h1>
 
             <div class="social-box autoBlur">
-                <a href="tel:+51997216531"><i class='bx bxs-phone'></i> +51 997 216 531</a>
-                <a href="mailto:info@redastrum.org"><i class='bx bxl-telegram'></i> info@redastrum.org</a>
-                <a href="https://www.linkedin.com/company/red-astrum" target="_blank"><i class='bx bxl-linkedin-square'></i> Red Astrum</a>
+                <a href="tel:+51997216531">
+                    <i class='bx bxs-phone'></i> +51 997 216 531
+                </a>
+
+                <a href="mailto:info@redastrum.org">
+                    <i class='bx bx-envelope'></i> info@redastrum.org
+                </a>
+
+                <a href="https://www.linkedin.com/company/red-astrum" target="_blank">
+                    <i class='bx bxl-linkedin-square'></i> Red Astrum
+                </a>
+
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank" aria-label="Instagram">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
                 </div>
             </div>
 
             <div class="contact-box autoBlur">
                 <div>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMwpHjk7Q-dbpkExp9r1J-ygnRdwjGAnfy2yxShIMycI5GGg/viewform?embedded=true" width="640" height="442" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLScMwpHjk7Q-dbpkExp9r1J-ygnRdwjGAnfy2yxShIMycI5GGg/viewform?embedded=true"
+                        width="640"
+                        height="442"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0">
+                        Cargando…
+                    </iframe>
                 </div>
             </div>
         </section>
 
+        <!-- FOOTER -->
         <section class="footer">
-            <h1>© 2026 Red Astrum. Todos los derechos reservados.</h1>
+            <div class="footer-text">
+                <h1>© 2026 Red Astrum. Todos los derechos reservados.</h1>
+                <p>RUC: 20615815005</p>
+            </div>
+
             <div class="box-icons">
-                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.facebook.com/share/18Cic6fYTM/" target="_blank" aria-label="Facebook">
+                    <i class='bx bxl-facebook-circle'></i>
+                </a>
+
+                <a href="https://www.instagram.com/red_astrum?igsh=cGxwdHd5OWY2c2w1" target="_blank" aria-label="Instagram">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+
+                <a href="https://www.linkedin.com/company/red-astrum?trk=blended-typeahead" target="_blank" aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin-square'></i>
+                </a>
             </div>
         </section>
     </div>
 
+    <!-- SCRIPTS -->
     <script src="app.js"></script>
+
     <script>
-        // Toggle submenú "Acerca de" al hacer clic
+        // Toggle submenú "Acerca de"
         document.querySelectorAll('.main > li > a').forEach(function(link) {
-            var parent = link.parentElement;
+            const parent = link.parentElement;
+
             if (parent.querySelector('ul')) {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
-                    var isOpen = parent.classList.contains('open');
-                    // Cerrar todos los submenús abiertos
+
+                    const isOpen = parent.classList.contains('open');
+
                     document.querySelectorAll('.main > li.open').forEach(function(li) {
                         li.classList.remove('open');
                     });
-                    // Abrir el actual si estaba cerrado
+
                     if (!isOpen) {
                         parent.classList.add('open');
                     }
@@ -270,7 +400,9 @@
             }
         });
     </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
         AOS.init();
     </script>
