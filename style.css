@@ -3558,3 +3558,115 @@ header .box-icons a {
         gap: 14px;
     }
 }
+
+/* =====================================================
+   FOOTER FINAL COMPLETO — RED ASTRUM
+   ===================================================== */
+
+.site-footer {
+    display: none !important;
+}
+
+.footer {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    margin-top: 40px !important;
+    padding: 32px 48px !important;
+
+    background-color: rgba(12, 12, 18, 0.88) !important;
+    backdrop-filter: blur(10px) !important;
+    border-top: 1px solid rgba(212, 184, 232, 0.28) !important;
+    box-shadow: 0 -8px 28px rgba(107, 47, 160, 0.12) !important;
+
+    z-index: 20 !important;
+}
+
+.footer-text {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+}
+
+.footer-text h1 {
+    margin: 0 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: rgba(255, 255, 255, 0.55) !important;
+    letter-spacing: 0.02em !important;
+}
+
+.footer-text p {
+    margin: 0 !important;
+    font-size: 14px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.02em !important;
+}
+
+.footer .box-icons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 24px !important;
+}
+
+.footer .box-icons a {
+    width: 34px !important;
+    height: 34px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border-radius: 50% !important;
+    border: 2px solid var(--color-light) !important;
+
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 20px !important;
+
+    transition: 0.25s ease !important;
+}
+
+.footer .box-icons a:hover {
+    background-color: var(--color-light) !important;
+    color: #080614 !important;
+    box-shadow: 0 0 18px rgba(212, 184, 232, 0.5) !important;
+    transform: translateY(-3px) !important;
+}
+
+/* Evita que el formulario empuje raro al footer */
+.contact-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 80px !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .footer {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 22px !important;
+        padding: 28px 24px !important;
+    }
+
+    .footer-text {
+        align-items: center !important;
+    }
+
+    .footer-text h1,
+    .footer-text p {
+        font-size: 13px !important;
+    }
+
+    .footer .box-icons {
+        gap: 16px !important;
+    }
+}
