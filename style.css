@@ -3240,3 +3240,188 @@ header .box-icons a {
         z-index: 1 !important;
     }
 }
+
+/* =====================================================
+   FIX FINAL INFO CARDS — TEXTO LIMPIO + ICONOS DE FONDO
+   ===================================================== */
+
+.info-section {
+    width: 80% !important;
+    margin-top: 40px !important;
+}
+
+.info-section .section-title {
+    margin-bottom: 35px !important;
+}
+
+/* Grid general */
+.info-cards {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1.55fr !important;
+    grid-template-rows: 240px 240px !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+/* Cards base */
+.info-cards .card {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+
+    min-height: 240px !important;
+    height: auto !important;
+    padding: 30px !important;
+
+    overflow: hidden !important;
+    border: 1px solid rgba(212, 184, 232, 0.35) !important;
+    border-radius: 20px !important;
+    background-color: rgba(0, 0, 0, 0.35) !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+/* Texto siempre completo */
+.info-cards .card h1 {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    margin: 0 0 12px 0 !important;
+    max-width: 100% !important;
+
+    z-index: 3 !important;
+    color: lightgray !important;
+    font-size: 25px !important;
+    line-height: 1.18 !important;
+}
+
+.info-cards .card p {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    margin: 0 !important;
+    max-width: 100% !important;
+
+    z-index: 3 !important;
+    color: rgba(255, 255, 255, 0.72) !important;
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+}
+
+/* Íconos como fondo, sin tapar texto */
+.info-cards .card img {
+    position: absolute !important;
+    top: auto !important;
+    right: 20px !important;
+    bottom: 18px !important;
+    left: auto !important;
+    transform: none !important;
+
+    width: 105px !important;
+    max-width: 105px !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+    opacity: 0.22 !important;
+    z-index: 1 !important;
+    pointer-events: none !important;
+}
+
+/* Card grande derecha */
+.info-cards .card:nth-child(3) {
+    grid-column: 3 !important;
+    grid-row: 1 / span 2 !important;
+
+    min-height: 500px !important;
+    justify-content: flex-start !important;
+    padding: 52px 38px !important;
+}
+
+.info-cards .card:nth-child(3) h1 {
+    font-size: 29px !important;
+    line-height: 1.42 !important;
+    max-width: 95% !important;
+}
+
+.info-cards .card:nth-child(3) video {
+    position: absolute !important;
+    right: -60px !important;
+    bottom: -70px !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+
+    width: 92% !important;
+    height: 78% !important;
+
+    object-fit: contain !important;
+    opacity: 0.26 !important;
+    mix-blend-mode: lighten !important;
+    z-index: 1 !important;
+}
+
+/* Pensamiento Astrum */
+.info-cards .card:nth-child(4) {
+    grid-column: 1 / span 2 !important;
+    grid-row: 2 !important;
+}
+
+.info-cards .card:nth-child(4) img {
+    width: 125px !important;
+    max-width: 125px !important;
+    opacity: 0.22 !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .info-cards {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+    }
+
+    .info-cards .card,
+    .info-cards .card:nth-child(3),
+    .info-cards .card:nth-child(4) {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        min-height: 250px !important;
+        padding: 28px !important;
+    }
+
+    .info-cards .card:nth-child(3) {
+        min-height: 360px !important;
+    }
+
+    .info-cards .card h1,
+    .info-cards .card:nth-child(3) h1 {
+        font-size: 24px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info-section {
+        width: 90% !important;
+    }
+
+    .info-cards .card {
+        min-height: 260px !important;
+        padding: 24px !important;
+    }
+
+    .info-cards .card img {
+        width: 95px !important;
+        max-width: 95px !important;
+        opacity: 0.18 !important;
+    }
+
+    .info-cards .card h1 {
+        font-size: 22px !important;
+    }
+
+    .info-cards .card p {
+        font-size: 14px !important;
+    }
+}
