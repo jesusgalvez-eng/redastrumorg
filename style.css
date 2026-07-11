@@ -2981,7 +2981,7 @@ header .box-icons a {
     bottom: 20px;
     width: 92px;
     height: auto;
-    opacity: 0.22;
+    opacity: 0.40;
     z-index: 1;
     pointer-events: none;
 }
@@ -3014,7 +3014,7 @@ header .box-icons a {
     width: 95%;
     height: 75%;
     object-fit: contain;
-    opacity: 0.28;
+    opacity: 0.40;
     mix-blend-mode: lighten;
     z-index: 1;
     pointer-events: none;
@@ -3032,7 +3032,7 @@ header .box-icons a {
     bottom: 28px;
     width: 120px;
     height: auto;
-    opacity: 0.18;
+    opacity: 0.40;
     z-index: 1;
     pointer-events: none;
 }
