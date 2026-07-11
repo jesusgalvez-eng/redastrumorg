@@ -3097,3 +3097,143 @@ header .box-icons a {
         font-size: 24px;
     }
 }
+
+/* =====================================================
+   FIX CARRUSEL ONGS — TARJETAS UNIFORMES
+   ===================================================== */
+
+.skills-section {
+    width: min(1080px, 86%) !important;
+    margin: 80px auto !important;
+}
+
+.skills-box {
+    gap: 48px !important;
+}
+
+.slider.ong-slider,
+.slider {
+    --width: 220px;
+    --height: 220px;
+    width: 100% !important;
+    height: var(--height) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+    ) !important;
+}
+
+.slider .list {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: calc(var(--width) * var(--quantity)) !important;
+}
+
+.slider .list .item {
+    width: var(--width) !important;
+    height: var(--height) !important;
+    position: absolute !important;
+    left: 100% !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+
+    background:
+        radial-gradient(circle at top right, rgba(107, 47, 160, 0.20), transparent 42%),
+        rgba(8, 6, 20, 0.78) !important;
+
+    border: 1px solid rgba(212, 184, 232, 0.34) !important;
+    box-shadow: 0 0 18px rgba(107, 47, 160, 0.18) !important;
+    backdrop-filter: blur(8px) !important;
+
+    animation: autoRun 33s linear infinite !important;
+    animation-delay: calc((33s / var(--quantity)) * (var(--position) - 1) - 33s) !important;
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease !important;
+}
+
+.slider .list .item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.08),
+        transparent 45%,
+        rgba(107, 47, 160, 0.10)
+    );
+    z-index: 0;
+    pointer-events: none;
+}
+
+.slider .list .item img {
+    position: relative !important;
+    z-index: 1 !important;
+
+    width: 74% !important;
+    height: 74% !important;
+    object-fit: contain !important;
+
+    padding: 16px !important;
+    border-radius: 20px !important;
+    background: rgba(255, 255, 255, 0.94) !important;
+
+    box-shadow: 0 0 18px rgba(255, 255, 255, 0.14) !important;
+    filter: none !important;
+}
+
+.slider:hover .item {
+    animation-play-state: paused !important;
+    filter: none !important;
+}
+
+.slider .item:hover {
+    transform: scale(1.04) !important;
+    border-color: rgba(212, 184, 232, 0.75) !important;
+    box-shadow: 0 0 28px rgba(212, 184, 232, 0.34) !important;
+}
+
+@keyframes autoRun {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: calc(var(--width) * -1);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .slider.ong-slider,
+    .slider {
+        --width: 150px;
+        --height: 150px;
+    }
+
+    .slider .list .item img {
+        width: 76% !important;
+        height: 76% !important;
+        padding: 10px !important;
+        border-radius: 16px !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slider.ong-slider,
+    .slider {
+        --width: 120px;
+        --height: 120px;
+    }
+}
