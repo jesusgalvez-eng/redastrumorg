@@ -3237,3 +3237,89 @@ header .box-icons a {
         --height: 120px;
     }
 }
+
+/* =====================================================
+   GALERÍA ONGS — VERSIÓN ESTABLE Y VISIBLE
+   ===================================================== */
+
+.skills-section {
+    width: min(1080px, 86%) !important;
+    margin: 90px auto !important;
+}
+
+.skills-box {
+    width: 100% !important;
+    gap: 45px !important;
+}
+
+.Designer {
+    max-width: 760px !important;
+    margin: 0 auto !important;
+}
+
+.Designer p {
+    text-align: center !important;
+    font-size: 19px !important;
+    line-height: 1.65 !important;
+    color: rgba(255, 255, 255, 0.78) !important;
+}
+
+.ra-ong-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 28px;
+    margin-top: 30px;
+}
+
+.ra-ong-card {
+    height: 190px;
+    border-radius: 24px;
+    border: 1px solid rgba(212, 184, 232, 0.35);
+    background:
+        radial-gradient(circle at top right, rgba(107, 47, 160, 0.22), transparent 45%),
+        rgba(8, 6, 20, 0.78);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 18px rgba(107, 47, 160, 0.16);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 28px;
+    transition: 0.3s ease;
+}
+
+.ra-ong-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 184, 232, 0.75);
+    box-shadow: 0 0 28px rgba(212, 184, 232, 0.32);
+}
+
+.ra-ong-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 14px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.12);
+}
+
+@media screen and (max-width: 700px) {
+    .ra-ong-gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .ra-ong-card {
+        height: 150px;
+        padding: 18px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .ra-ong-gallery {
+        grid-template-columns: 1fr;
+    }
+}
