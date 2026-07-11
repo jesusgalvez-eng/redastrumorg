@@ -3430,3 +3430,131 @@ header .box-icons a {
         padding: 16px;
     }
 }
+
+/* =====================================================
+   FOOTER FINAL — RED ASTRUM
+   ===================================================== */
+
+.site-footer {
+    width: 100%;
+    margin-top: 40px;
+    padding: 0 48px 40px;
+    position: relative;
+    z-index: 20;
+}
+
+.site-footer-content {
+    width: min(1080px, 100%);
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    padding: 26px 34px;
+
+    border-radius: 24px 24px 0 0;
+    border-top: 1px solid rgba(212, 184, 232, 0.28);
+    border-left: 1px solid rgba(212, 184, 232, 0.12);
+    border-right: 1px solid rgba(212, 184, 232, 0.12);
+
+    background:
+        radial-gradient(circle at top right, rgba(107, 47, 160, 0.20), transparent 38%),
+        rgba(8, 6, 20, 0.82);
+
+    backdrop-filter: blur(10px);
+    box-shadow: 0 -8px 28px rgba(107, 47, 160, 0.14);
+}
+
+.site-footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.site-footer-brand p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.58);
+    line-height: 1.4;
+}
+
+.site-footer-brand span {
+    width: fit-content;
+    display: inline-flex;
+    align-items: center;
+
+    padding: 4px 12px;
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+
+    color: var(--color-light);
+    background: rgba(107, 47, 160, 0.18);
+    border: 1px solid rgba(212, 184, 232, 0.28);
+}
+
+.site-footer-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.site-footer-icons a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 1.8px solid var(--color-light);
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+    transition: 0.25s ease;
+}
+
+.site-footer-icons a:hover {
+    background: var(--color-light);
+    color: #080614;
+    box-shadow: 0 0 18px rgba(212, 184, 232, 0.45);
+    transform: translateY(-3px);
+}
+
+/* Anula el footer viejo si todavía existe */
+.footer {
+    display: none !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .site-footer {
+        padding: 0 22px 28px;
+    }
+
+    .site-footer-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 24px 20px;
+    }
+
+    .site-footer-brand {
+        align-items: center;
+    }
+
+    .site-footer-brand p {
+        font-size: 13px;
+    }
+
+    .site-footer-icons {
+        gap: 14px;
+    }
+}
