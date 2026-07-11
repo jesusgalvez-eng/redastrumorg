@@ -2992,3 +2992,184 @@ header .box-icons a {
     margin-top: 25px !important;
     margin-bottom: 0 !important;
 }
+
+/* =====================================================
+   FIX INFO CARDS — HOME
+   Misión / Visión / Pensamiento / Red educativa
+   ===================================================== */
+
+.info-section {
+    width: 80% !important;
+    margin-top: 40px !important;
+}
+
+.info-cards {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1.55fr !important;
+    grid-template-rows: 230px 230px !important;
+    gap: 20px !important;
+    width: 100% !important;
+}
+
+.card {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+    min-height: 230px !important;
+    height: auto !important;
+    padding: 26px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(212, 184, 232, 0.35) !important;
+    border-radius: 20px !important;
+    background-color: rgba(0, 0, 0, 0.28) !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+.card h1 {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    margin: 0 0 10px 0 !important;
+    z-index: 2 !important;
+    color: lightgray !important;
+    font-size: 25px !important;
+    line-height: 1.2 !important;
+}
+
+.card p {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    margin: 0 !important;
+    z-index: 2 !important;
+    max-width: 100% !important;
+    color: rgba(255, 255, 255, 0.68) !important;
+    font-size: 15px !important;
+    line-height: 1.45 !important;
+}
+
+/* Íconos de misión, visión y pensamiento */
+.card img {
+    position: absolute !important;
+    top: 18px !important;
+    right: 28px !important;
+    left: auto !important;
+    transform: none !important;
+    width: 34% !important;
+    max-width: 115px !important;
+    height: auto !important;
+    object-fit: contain !important;
+    z-index: 1 !important;
+    opacity: 0.9 !important;
+    pointer-events: none !important;
+}
+
+/* Card grande derecha */
+.card:nth-child(3) {
+    grid-column: 3 !important;
+    grid-row: 1 / span 2 !important;
+    min-height: 480px !important;
+    height: auto !important;
+    justify-content: flex-start !important;
+    padding: 54px 38px !important;
+}
+
+.card:nth-child(3) h1 {
+    font-size: 28px !important;
+    line-height: 1.42 !important;
+    max-width: 92% !important;
+    z-index: 2 !important;
+}
+
+.card:nth-child(3) video {
+    position: absolute !important;
+    right: -40px !important;
+    bottom: -40px !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 85% !important;
+    height: 75% !important;
+    object-fit: contain !important;
+    opacity: 0.28 !important;
+    mix-blend-mode: lighten !important;
+    z-index: 1 !important;
+}
+
+/* Card pensamiento Astrum */
+.card:nth-child(4) {
+    grid-column: 1 / span 2 !important;
+    grid-row: 2 !important;
+    min-height: 230px !important;
+}
+
+.card:nth-child(4) h1 {
+    max-width: 70% !important;
+}
+
+.card:nth-child(4) p {
+    max-width: 92% !important;
+}
+
+.card:nth-child(4) img {
+    top: 24px !important;
+    right: 34px !important;
+    width: 28% !important;
+    max-width: 130px !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .info-cards {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+    }
+
+    .card,
+    .card:nth-child(3),
+    .card:nth-child(4) {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        min-height: 260px !important;
+    }
+
+    .card:nth-child(3) {
+        min-height: 360px !important;
+    }
+
+    .card h1,
+    .card:nth-child(3) h1 {
+        font-size: 24px !important;
+    }
+
+    .card:nth-child(4) h1 {
+        max-width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info-section {
+        width: 90% !important;
+    }
+
+    .card {
+        padding: 24px !important;
+        min-height: 280px !important;
+    }
+
+    .card img {
+        width: 38% !important;
+        max-width: 105px !important;
+        opacity: 0.72 !important;
+    }
+
+    .card h1 {
+        font-size: 22px !important;
+    }
+
+    .card p {
+        font-size: 14px !important;
+    }
+}
