@@ -3173,3 +3173,70 @@ header .box-icons a {
         font-size: 14px !important;
     }
 }
+
+/* =====================================================
+   FIX INFO CARDS — ICONOS SIN TAPAR TEXTO
+   ===================================================== */
+
+/* Más espacio interno para las cards pequeñas */
+.info-cards .card:nth-child(1),
+.info-cards .card:nth-child(2) {
+    padding-right: 130px !important;
+}
+
+/* Íconos pequeños: a la derecha y más arriba */
+.info-cards .card:nth-child(1) img,
+.info-cards .card:nth-child(2) img {
+    top: 28px !important;
+    right: 24px !important;
+    width: 88px !important;
+    max-width: 88px !important;
+    opacity: 0.85 !important;
+    z-index: 1 !important;
+}
+
+/* Texto siempre por encima */
+.info-cards .card h1,
+.info-cards .card p {
+    position: relative !important;
+    z-index: 3 !important;
+}
+
+/* Card de pensamiento: texto a la izquierda, ícono a la derecha */
+.info-cards .card:nth-child(4) {
+    padding-right: 180px !important;
+}
+
+.info-cards .card:nth-child(4) img {
+    top: 38px !important;
+    right: 42px !important;
+    width: 115px !important;
+    max-width: 115px !important;
+    opacity: 0.85 !important;
+    z-index: 1 !important;
+}
+
+.info-cards .card:nth-child(4) h1,
+.info-cards .card:nth-child(4) p {
+    max-width: 100% !important;
+}
+
+/* En pantallas más pequeñas, los íconos pasan al fondo */
+@media screen and (max-width: 1000px) {
+    .info-cards .card:nth-child(1),
+    .info-cards .card:nth-child(2),
+    .info-cards .card:nth-child(4) {
+        padding-right: 26px !important;
+    }
+
+    .info-cards .card:nth-child(1) img,
+    .info-cards .card:nth-child(2) img,
+    .info-cards .card:nth-child(4) img {
+        right: 24px !important;
+        top: 24px !important;
+        width: 90px !important;
+        max-width: 90px !important;
+        opacity: 0.22 !important;
+        z-index: 1 !important;
+    }
+}
