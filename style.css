@@ -2229,9 +2229,12 @@ header ul a:hover{
             }
         }
 /* =========================================================
-   FIX GLOBAL FINAL — RED ASTRUM
+   RED ASTRUM — FIX CONSOLIDADO FINAL
+   Mantén este bloque al final del archivo.
+   Reemplaza todos los FIX anteriores para evitar conflictos.
    ========================================================= */
 
+/* ---------- Header global ---------- */
 header {
     position: fixed;
     height: 70px;
@@ -2332,6 +2335,13 @@ header .box-icons a {
     font-size: 19px;
 }
 
+/* ---------- Home: estructura general ---------- */
+.container {
+    gap: 80px;
+    min-height: 100vh;
+    height: auto;
+}
+
 .hero {
     min-height: 100vh;
     padding-top: 70px;
@@ -2349,12 +2359,121 @@ header .box-icons a {
     object-fit: contain;
 }
 
-.container {
-    gap: 80px;
-    min-height: 100vh;
-    height: auto;
+/* ---------- Home: Conozca nuestro proyecto ---------- */
+.info-section {
+    width: min(80%, 1080px);
+    margin-top: 40px;
 }
 
+.info-section .section-title {
+    margin: 0 0 36px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(360px, 1.55fr);
+    grid-template-areas:
+        "mision vision red"
+        "pensamiento pensamiento red";
+    gap: 20px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.info-cards .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 255px;
+    height: auto;
+    padding: 30px;
+    overflow: hidden;
+    border: 1px solid rgba(212, 184, 232, 0.35);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.38);
+    backdrop-filter: blur(4px);
+}
+
+.info-cards .card:nth-child(1) { grid-area: mision; }
+.info-cards .card:nth-child(2) { grid-area: vision; }
+.info-cards .card:nth-child(3) { grid-area: red; min-height: 530px; padding: 46px 38px; }
+.info-cards .card:nth-child(4) { grid-area: pensamiento; min-height: 255px; }
+
+.info-cards .card h1 {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 0 0 14px;
+    max-width: 100%;
+    z-index: 3;
+    color: lightgray;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.info-cards .card p {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 0;
+    max-width: 100%;
+    z-index: 3;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 15px;
+    line-height: 1.48;
+}
+
+.info-cards .card img {
+    position: absolute;
+    right: 22px;
+    bottom: 18px;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 105px;
+    max-width: 105px;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.16;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.info-cards .card:nth-child(1) img,
+.info-cards .card:nth-child(2) img {
+    width: 95px;
+    max-width: 95px;
+}
+
+.info-cards .card:nth-child(4) img {
+    width: 125px;
+    max-width: 125px;
+}
+
+.info-cards .card:nth-child(3) h1 {
+    font-size: 29px;
+    line-height: 1.42;
+    max-width: 95%;
+}
+
+.info-cards .card:nth-child(3) video {
+    position: absolute;
+    right: -58px;
+    bottom: -70px;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 92%;
+    height: 78%;
+    object-fit: contain;
+    opacity: 0.24;
+    mix-blend-mode: lighten;
+    z-index: 1;
+}
+
+/* ---------- Actividades ---------- */
 .my-project {
     height: auto;
     min-height: auto;
@@ -2386,6 +2505,7 @@ header .box-icons a {
     line-height: 1.25;
 }
 
+/* ---------- Impacto / ONGs ---------- */
 .counters {
     width: 100%;
     padding: 80px 2em;
@@ -2402,6 +2522,7 @@ header .box-icons a {
     margin-bottom: 80px;
 }
 
+/* ---------- Contacto ---------- */
 .contact-section {
     width: 80%;
     min-height: auto;
@@ -2451,6 +2572,7 @@ header .box-icons a {
     border: none;
 }
 
+/* ---------- Footer ---------- */
 .footer {
     position: relative;
     width: 100%;
@@ -2491,6 +2613,107 @@ header .box-icons a {
     gap: 24px;
 }
 
+/* ---------- Team cards ---------- */
+.team-page {
+    padding-top: 120px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
+    justify-content: center;
+    align-items: start;
+    gap: 70px 38px;
+    width: 90%;
+    margin: 80px auto 0;
+    padding-top: 40px;
+}
+
+.member-card {
+    width: 320px;
+    min-height: 250px;
+    padding: 82px 28px 28px;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+}
+
+.member-avatar {
+    position: absolute;
+    top: -56px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #160628;
+    border: 4px solid #6B2FA0;
+    box-shadow: 0 0 18px rgba(107, 47, 160, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    border-radius: 50%;
+}
+
+.member-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 4px;
+    margin-bottom: 14px;
+}
+
+.member-area,
+.member-subarea {
+    white-space: nowrap;
+}
+
+.member-subarea {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 3px 12px;
+    border-radius: 50px;
+    background-color: rgba(232, 116, 12, 0.16);
+    border: 1px solid rgba(232, 116, 12, 0.45);
+    color: var(--color-accent);
+}
+
+.member-name {
+    margin: 8px 0 8px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.member-role {
+    margin: 0 0 18px;
+    line-height: 1.4;
+    font-size: 14px;
+}
+
+.member-socials {
+    margin-top: 12px;
+}
+
+.results-count {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+/* ---------- Responsive ---------- */
 @media screen and (max-width: 1200px) {
     header {
         padding: 0 22px;
@@ -2515,6 +2738,22 @@ header .box-icons a {
 
     header .box-icons {
         gap: 16px;
+    }
+
+    .info-section {
+        width: 86%;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "mision vision"
+            "pensamiento pensamiento"
+            "red red";
+    }
+
+    .info-cards .card:nth-child(3) {
+        min-height: 380px;
     }
 }
 
@@ -2572,6 +2811,41 @@ header .box-icons a {
 
     .skills-video-box {
         display: none;
+    }
+
+    .info-section {
+        width: 90%;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "mision"
+            "vision"
+            "pensamiento"
+            "red";
+    }
+
+    .info-cards .card,
+    .info-cards .card:nth-child(3),
+    .info-cards .card:nth-child(4) {
+        min-height: 260px;
+        padding: 26px;
+    }
+
+    .info-cards .card:nth-child(3) h1,
+    .info-cards .card h1 {
+        font-size: 22px;
+    }
+
+    .info-cards .card p {
+        font-size: 14px;
+    }
+
+    .info-cards .card img {
+        width: 90px;
+        max-width: 90px;
+        opacity: 0.14;
     }
 
     .my-project {
@@ -2632,796 +2906,5 @@ header .box-icons a {
         flex-direction: column;
         text-align: center;
         gap: 18px;
-    }
-}
-
-/* =========================================================
-   FIX CARDS — MISIÓN / VISIÓN / PENSAMIENTO ASTRUM
-   ========================================================= */
-
-.info-section {
-    width: 80%;
-    margin-top: 60px;
-}
-
-.info-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.6fr;
-    grid-template-rows: 255px 255px;
-    gap: 20px;
-    width: 100%;
-}
-
-.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    height: auto;
-    min-height: 255px;
-    padding: 28px;
-    overflow: hidden;
-    border: 1px solid rgba(212, 184, 232, 0.35);
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px);
-}
-
-.card h1 {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    margin: 0 0 10px 0;
-    z-index: 2;
-    color: lightgray;
-    font-size: 26px;
-    line-height: 1.25;
-}
-
-.card p {
-    position: relative;
-    left: auto;
-    bottom: auto;
-    margin: 0;
-    z-index: 2;
-    max-width: 100%;
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 15px;
-    line-height: 1.55;
-}
-
-.card img {
-    position: absolute;
-    top: 18px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 38%;
-    height: auto;
-    max-height: 120px;
-    object-fit: contain;
-    z-index: 1;
-    opacity: 0.95;
-}
-
-.card video {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
-    height: 45%;
-    object-fit: contain;
-    mix-blend-mode: lighten;
-    z-index: 1;
-}
-
-/* Card grande de la derecha */
-.card:nth-child(3) {
-    grid-column: 3;
-    grid-row: 1 / span 2;
-    height: auto;
-    min-height: 530px;
-    justify-content: center;
-}
-
-.card:nth-child(3) h1 {
-    font-size: 28px;
-    line-height: 1.45;
-    max-width: 90%;
-}
-
-.card:nth-child(3) video {
-    opacity: 0.25;
-    width: 90%;
-    height: 70%;
-}
-
-/* Card inferior izquierda */
-.card:nth-child(4) {
-    grid-column: 1 / span 2;
-    grid-row: 2;
-}
-
-.card:nth-child(4) img {
-    width: 28%;
-    max-height: 150px;
-}
-
-/* Responsive */
-@media screen and (max-width: 1000px) {
-    .info-cards {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-    }
-
-    .card,
-    .card:nth-child(3),
-    .card:nth-child(4) {
-        grid-column: auto;
-        grid-row: auto;
-        min-height: 280px;
-    }
-
-    .card:nth-child(3) {
-        min-height: 380px;
-    }
-
-    .card h1 {
-        font-size: 24px;
-    }
-
-    .card:nth-child(3) h1 {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .info-section {
-        width: 90%;
-    }
-
-    .card {
-        padding: 24px;
-        min-height: 300px;
-    }
-
-    .card img {
-        width: 42%;
-    }
-
-    .card h1 {
-        font-size: 22px;
-    }
-
-    .card p {
-        font-size: 14px;
-    }
-}
-
-.member-badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    margin-bottom: 4px;
-}
-
-.member-subarea {
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    padding: 3px 12px;
-    border-radius: 50px;
-    background-color: rgba(232, 116, 12, 0.16);
-    border: 1px solid rgba(232, 116, 12, 0.45);
-    color: var(--color-accent);
-}
-
-/* ===== FIX TEAM CARDS / ENCUADRE ===== */
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 320px));
-    justify-content: center;
-    gap: 38px;
-    width: 100%;
-    margin-top: 40px;
-}
-
-.member-card {
-    position: relative;
-    overflow: visible;
-    padding: 78px 28px 28px;
-    min-height: 250px;
-    text-align: center;
-}
-
-.member-avatar {
-    position: absolute;
-    top: -54px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid #7b2cbf;
-    box-shadow: 0 0 18px rgba(123, 44, 191, 0.45);
-    background: #1a1033;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 3;
-}
-
-.member-avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
-    display: block;
-}
-
-.member-avatar.no-photo {
-    font-size: 20px;
-    font-weight: 700;
-    color: white;
-    background: linear-gradient(135deg, #7b2cbf, #f77f00);
-}
-
-.member-badges {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    margin-bottom: 10px;
-    margin-top: 4px;
-}
-
-.member-name {
-    margin-top: 6px;
-    margin-bottom: 6px;
-}
-
-.member-role {
-    margin-top: 0;
-    line-height: 1.4;
-}
-
-.results-count {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-/* =====================================================
-   FIX DEFINITIVO TEAM — AVATARES Y CARDS
-   Pegar al FINAL de style.css
-   ===================================================== */
-
-.team-page {
-    padding-top: 120px !important;
-}
-
-.team-grid {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 320px)) !important;
-    justify-content: center !important;
-    align-items: start !important;
-    gap: 70px 38px !important;
-    width: 90% !important;
-    margin: 80px auto 0 !important;
-    padding-top: 40px !important;
-}
-
-.member-card {
-    width: 320px !important;
-    min-height: 250px !important;
-    padding: 82px 28px 28px !important;
-    position: relative !important;
-    overflow: visible !important;
-    text-align: center !important;
-}
-
-.member-avatar {
-    position: absolute !important;
-    top: -56px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-
-    width: 100px !important;
-    height: 100px !important;
-
-    border-radius: 50% !important;
-    overflow: hidden !important;
-
-    background: #160628 !important;
-    border: 4px solid #6B2FA0 !important;
-    box-shadow: 0 0 18px rgba(107, 47, 160, 0.75) !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    z-index: 10 !important;
-}
-
-.member-avatar img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center top !important;
-    display: block !important;
-    border-radius: 50% !important;
-}
-
-.member-badges {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-    gap: 6px !important;
-    margin-top: 4px !important;
-    margin-bottom: 14px !important;
-}
-
-.member-area,
-.member-subarea {
-    white-space: nowrap !important;
-}
-
-.member-name {
-    margin: 8px 0 8px !important;
-    font-size: 20px !important;
-    line-height: 1.2 !important;
-}
-
-.member-role {
-    margin: 0 0 18px !important;
-    line-height: 1.4 !important;
-    font-size: 14px !important;
-}
-
-.member-socials {
-    margin-top: 12px !important;
-}
-
-.results-count {
-    text-align: center !important;
-    margin-top: 25px !important;
-    margin-bottom: 0 !important;
-}
-
-/* =====================================================
-   FIX INFO CARDS — HOME
-   Misión / Visión / Pensamiento / Red educativa
-   ===================================================== */
-
-.info-section {
-    width: 80% !important;
-    margin-top: 40px !important;
-}
-
-.info-cards {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1.55fr !important;
-    grid-template-rows: 230px 230px !important;
-    gap: 20px !important;
-    width: 100% !important;
-}
-
-.card {
-    position: relative !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-end !important;
-    align-items: flex-start !important;
-    min-height: 230px !important;
-    height: auto !important;
-    padding: 26px !important;
-    overflow: hidden !important;
-    border: 1px solid rgba(212, 184, 232, 0.35) !important;
-    border-radius: 20px !important;
-    background-color: rgba(0, 0, 0, 0.28) !important;
-    backdrop-filter: blur(4px) !important;
-}
-
-.card h1 {
-    position: relative !important;
-    left: auto !important;
-    bottom: auto !important;
-    margin: 0 0 10px 0 !important;
-    z-index: 2 !important;
-    color: lightgray !important;
-    font-size: 25px !important;
-    line-height: 1.2 !important;
-}
-
-.card p {
-    position: relative !important;
-    left: auto !important;
-    bottom: auto !important;
-    margin: 0 !important;
-    z-index: 2 !important;
-    max-width: 100% !important;
-    color: rgba(255, 255, 255, 0.68) !important;
-    font-size: 15px !important;
-    line-height: 1.45 !important;
-}
-
-/* Íconos de misión, visión y pensamiento */
-.card img {
-    position: absolute !important;
-    top: 18px !important;
-    right: 28px !important;
-    left: auto !important;
-    transform: none !important;
-    width: 34% !important;
-    max-width: 115px !important;
-    height: auto !important;
-    object-fit: contain !important;
-    z-index: 1 !important;
-    opacity: 0.9 !important;
-    pointer-events: none !important;
-}
-
-/* Card grande derecha */
-.card:nth-child(3) {
-    grid-column: 3 !important;
-    grid-row: 1 / span 2 !important;
-    min-height: 480px !important;
-    height: auto !important;
-    justify-content: flex-start !important;
-    padding: 54px 38px !important;
-}
-
-.card:nth-child(3) h1 {
-    font-size: 28px !important;
-    line-height: 1.42 !important;
-    max-width: 92% !important;
-    z-index: 2 !important;
-}
-
-.card:nth-child(3) video {
-    position: absolute !important;
-    right: -40px !important;
-    bottom: -40px !important;
-    top: auto !important;
-    left: auto !important;
-    transform: none !important;
-    width: 85% !important;
-    height: 75% !important;
-    object-fit: contain !important;
-    opacity: 0.28 !important;
-    mix-blend-mode: lighten !important;
-    z-index: 1 !important;
-}
-
-/* Card pensamiento Astrum */
-.card:nth-child(4) {
-    grid-column: 1 / span 2 !important;
-    grid-row: 2 !important;
-    min-height: 230px !important;
-}
-
-.card:nth-child(4) h1 {
-    max-width: 70% !important;
-}
-
-.card:nth-child(4) p {
-    max-width: 92% !important;
-}
-
-.card:nth-child(4) img {
-    top: 24px !important;
-    right: 34px !important;
-    width: 28% !important;
-    max-width: 130px !important;
-}
-
-/* Responsive */
-@media screen and (max-width: 1000px) {
-    .info-cards {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: auto !important;
-    }
-
-    .card,
-    .card:nth-child(3),
-    .card:nth-child(4) {
-        grid-column: auto !important;
-        grid-row: auto !important;
-        min-height: 260px !important;
-    }
-
-    .card:nth-child(3) {
-        min-height: 360px !important;
-    }
-
-    .card h1,
-    .card:nth-child(3) h1 {
-        font-size: 24px !important;
-    }
-
-    .card:nth-child(4) h1 {
-        max-width: 100% !important;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .info-section {
-        width: 90% !important;
-    }
-
-    .card {
-        padding: 24px !important;
-        min-height: 280px !important;
-    }
-
-    .card img {
-        width: 38% !important;
-        max-width: 105px !important;
-        opacity: 0.72 !important;
-    }
-
-    .card h1 {
-        font-size: 22px !important;
-    }
-
-    .card p {
-        font-size: 14px !important;
-    }
-}
-
-/* =====================================================
-   FIX INFO CARDS — ICONOS SIN TAPAR TEXTO
-   ===================================================== */
-
-/* Más espacio interno para las cards pequeñas */
-.info-cards .card:nth-child(1),
-.info-cards .card:nth-child(2) {
-    padding-right: 130px !important;
-}
-
-/* Íconos pequeños: a la derecha y más arriba */
-.info-cards .card:nth-child(1) img,
-.info-cards .card:nth-child(2) img {
-    top: 28px !important;
-    right: 24px !important;
-    width: 88px !important;
-    max-width: 88px !important;
-    opacity: 0.85 !important;
-    z-index: 1 !important;
-}
-
-/* Texto siempre por encima */
-.info-cards .card h1,
-.info-cards .card p {
-    position: relative !important;
-    z-index: 3 !important;
-}
-
-/* Card de pensamiento: texto a la izquierda, ícono a la derecha */
-.info-cards .card:nth-child(4) {
-    padding-right: 180px !important;
-}
-
-.info-cards .card:nth-child(4) img {
-    top: 38px !important;
-    right: 42px !important;
-    width: 115px !important;
-    max-width: 115px !important;
-    opacity: 0.85 !important;
-    z-index: 1 !important;
-}
-
-.info-cards .card:nth-child(4) h1,
-.info-cards .card:nth-child(4) p {
-    max-width: 100% !important;
-}
-
-/* En pantallas más pequeñas, los íconos pasan al fondo */
-@media screen and (max-width: 1000px) {
-    .info-cards .card:nth-child(1),
-    .info-cards .card:nth-child(2),
-    .info-cards .card:nth-child(4) {
-        padding-right: 26px !important;
-    }
-
-    .info-cards .card:nth-child(1) img,
-    .info-cards .card:nth-child(2) img,
-    .info-cards .card:nth-child(4) img {
-        right: 24px !important;
-        top: 24px !important;
-        width: 90px !important;
-        max-width: 90px !important;
-        opacity: 0.22 !important;
-        z-index: 1 !important;
-    }
-}
-
-/* =====================================================
-   FIX FINAL INFO CARDS — TEXTO LIMPIO + ICONOS DE FONDO
-   ===================================================== */
-
-.info-section {
-    width: 80% !important;
-    margin-top: 40px !important;
-}
-
-.info-section .section-title {
-    margin-bottom: 35px !important;
-}
-
-/* Grid general */
-.info-cards {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr 1.55fr !important;
-    grid-template-rows: 240px 240px !important;
-    gap: 20px !important;
-    width: 100% !important;
-}
-
-/* Cards base */
-.info-cards .card {
-    position: relative !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-
-    min-height: 240px !important;
-    height: auto !important;
-    padding: 30px !important;
-
-    overflow: hidden !important;
-    border: 1px solid rgba(212, 184, 232, 0.35) !important;
-    border-radius: 20px !important;
-    background-color: rgba(0, 0, 0, 0.35) !important;
-    backdrop-filter: blur(4px) !important;
-}
-
-/* Texto siempre completo */
-.info-cards .card h1 {
-    position: relative !important;
-    left: auto !important;
-    bottom: auto !important;
-
-    margin: 0 0 12px 0 !important;
-    max-width: 100% !important;
-
-    z-index: 3 !important;
-    color: lightgray !important;
-    font-size: 25px !important;
-    line-height: 1.18 !important;
-}
-
-.info-cards .card p {
-    position: relative !important;
-    left: auto !important;
-    bottom: auto !important;
-
-    margin: 0 !important;
-    max-width: 100% !important;
-
-    z-index: 3 !important;
-    color: rgba(255, 255, 255, 0.72) !important;
-    font-size: 15px !important;
-    line-height: 1.45 !important;
-}
-
-/* Íconos como fondo, sin tapar texto */
-.info-cards .card img {
-    position: absolute !important;
-    top: auto !important;
-    right: 20px !important;
-    bottom: 18px !important;
-    left: auto !important;
-    transform: none !important;
-
-    width: 105px !important;
-    max-width: 105px !important;
-    height: auto !important;
-
-    object-fit: contain !important;
-    opacity: 0.22 !important;
-    z-index: 1 !important;
-    pointer-events: none !important;
-}
-
-/* Card grande derecha */
-.info-cards .card:nth-child(3) {
-    grid-column: 3 !important;
-    grid-row: 1 / span 2 !important;
-
-    min-height: 500px !important;
-    justify-content: flex-start !important;
-    padding: 52px 38px !important;
-}
-
-.info-cards .card:nth-child(3) h1 {
-    font-size: 29px !important;
-    line-height: 1.42 !important;
-    max-width: 95% !important;
-}
-
-.info-cards .card:nth-child(3) video {
-    position: absolute !important;
-    right: -60px !important;
-    bottom: -70px !important;
-    top: auto !important;
-    left: auto !important;
-    transform: none !important;
-
-    width: 92% !important;
-    height: 78% !important;
-
-    object-fit: contain !important;
-    opacity: 0.26 !important;
-    mix-blend-mode: lighten !important;
-    z-index: 1 !important;
-}
-
-/* Pensamiento Astrum */
-.info-cards .card:nth-child(4) {
-    grid-column: 1 / span 2 !important;
-    grid-row: 2 !important;
-}
-
-.info-cards .card:nth-child(4) img {
-    width: 125px !important;
-    max-width: 125px !important;
-    opacity: 0.22 !important;
-}
-
-/* Responsive */
-@media screen and (max-width: 1000px) {
-    .info-cards {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: auto !important;
-    }
-
-    .info-cards .card,
-    .info-cards .card:nth-child(3),
-    .info-cards .card:nth-child(4) {
-        grid-column: auto !important;
-        grid-row: auto !important;
-        min-height: 250px !important;
-        padding: 28px !important;
-    }
-
-    .info-cards .card:nth-child(3) {
-        min-height: 360px !important;
-    }
-
-    .info-cards .card h1,
-    .info-cards .card:nth-child(3) h1 {
-        font-size: 24px !important;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .info-section {
-        width: 90% !important;
-    }
-
-    .info-cards .card {
-        min-height: 260px !important;
-        padding: 24px !important;
-    }
-
-    .info-cards .card img {
-        width: 95px !important;
-        max-width: 95px !important;
-        opacity: 0.18 !important;
-    }
-
-    .info-cards .card h1 {
-        font-size: 22px !important;
-    }
-
-    .info-cards .card p {
-        font-size: 14px !important;
     }
 }
